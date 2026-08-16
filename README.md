@@ -1,16 +1,10 @@
+![Senspot Overview](images/senspot.png)
+
 ## SenSpot: Senescence in Spatial Transcriptomics
 
-<p align="center">
-  <img src="images/senspot.png" width="200"/>
-</p>
+SenSpot is a supervised machine learning classifier trained on fibroblast scRNA-seq data for identifying senescent cells in spatial transcriptomics datasets.
 
-SenSpot is a supervised machine learning classifier trained on HCA2 fibroblast scRNA-seq data for identifying senescent cells in 10x Visium spatial transcriptomics datasets.
-
----
-
-<p align="center">
-  <img src="images/senspot_method.png" width="750"/>
-</p>
+![Senspot Overview](images/senspot_method.png)
 
 ---
 
