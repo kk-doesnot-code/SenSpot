@@ -68,10 +68,10 @@ Full analysis produces:
 results/
 ├── senspot_results.csv
 ├── senspot_summary.txt
-├── spatial_map.png (white background)
-├── binary_map.png (white background)
-├── spatial_map_overlay.png (tissue overlay, dark background)
-├── binary_map_overlay.png (tissue overlay, dark background)
+├── spatial_map.png 
+├── binary_map.png
+├── spatial_map_overlay.png
+├── binary_map_overlay.png 
 ├── top_drivers.png
 └── driver_genes.csv
 
