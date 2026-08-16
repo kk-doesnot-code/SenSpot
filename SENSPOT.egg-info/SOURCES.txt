@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+SENSPOT.egg-info/PKG-INFO
+SENSPOT.egg-info/SOURCES.txt
+SENSPOT.egg-info/dependency_links.txt
+SENSPOT.egg-info/entry_points.txt
+SENSPOT.egg-info/requires.txt
+SENSPOT.egg-info/top_level.txt
+senspot/__init__.py
+senspot/analyse.py
+senspot/cli.py
+senspot/model.py
+senspot/../Model/model_genes.pkl
+senspot/../Model/model_old.pkl
+senspot/../Model/model_yng.pkl
+tests/test_senspot.py

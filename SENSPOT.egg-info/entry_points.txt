@@ -1,0 +1,2 @@
+[console_scripts]
+senspot = senspot.cli:main

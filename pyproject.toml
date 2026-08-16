@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SENSPOT"
+version = "1.1.0"
+description = "Senescence in Spatial TranScriptomics"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Kubera Kumar Anbarasu" },
+]
+keywords = ["senescence", "spatial transcriptomics", "Visium", "single-cell", "bioinformatics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic ::  Bio-Informatics",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "numpy>=1.22",
+    "pandas>=1.4",
+    "scikit-learn>=1.0",
+    "scanpy>=1.9",
+    "anndata>=0.8",
+    "qnorm>=0.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "isort"]
+
+[project.scripts]
+senspot = "senspot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["senspot*"]
+
+[tool.setuptools.package-data]
+senspot = ["../Model/*.pkl"]
