@@ -27,14 +27,14 @@ senspot --version
 ### Input formats
 
 **1. Visium directory**
-
+```
 my_sample/
 ├── filtered_feature_bc_matrix.h5 ← required
 └── spatial/
 ├── tissue_positions_list.csv ← required
 ├── scalefactors_json.json ← optional (image overlay)
 └── tissue_lowres_image.png ← optional (image overlay)
-
+```
 **2. AnnData (.h5ad)** — gene names must be HGNC symbols (e.g. DCN, COL1A1)
 
 > For CELLxGENE h5ad: `adata.var.index = adata.var['feature_name'].astype(str)`
@@ -65,6 +65,7 @@ senspot --input my_sample/ --output results/ --analyse --threads 8
 
 Full analysis produces:
 
+```
 results/
 ├── senspot_results.csv
 ├── senspot_summary.txt
@@ -74,6 +75,7 @@ results/
 ├── binary_map_overlay.png 
 ├── top_drivers.png
 └── driver_genes.csv
+```
 
 ### Python API
 
@@ -108,6 +110,7 @@ results.to_csv("results.csv")
 
 ### Repository structure
 
+```
 SenSpot/
 ├── senspot/
 │ ├── model.py ← SenSpot classifier
@@ -119,6 +122,7 @@ SenSpot/
 ├── tests/
 ├── environment.yml
 └── pyproject.toml
+```
 
 ---
 
